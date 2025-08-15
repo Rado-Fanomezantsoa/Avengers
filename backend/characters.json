@@ -1,17 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Iron Man",
-    "realName": "Tony Stark",
-    "universe": "Earth-616"
-  },
-  {
-    "id": 3,
-    "name": "Captain America",
-    "realName": "Steve Rogers",
-    "universe": "Earth-616"
-  },
-  {
     "id": 4,
     "name": "Black Widow",
     "realName": "Natasha Romanoff",
@@ -45,6 +33,12 @@
     "id": 1755194351648,
     "name": "Spider-man",
     "realName": "Peter Parker",
+    "universe": "Earth-616"
+  },
+  {
+    "id": 1755245556085,
+    "name": "Thor",
+    "realName": "Thor",
     "universe": "Earth-616"
   }
 ]

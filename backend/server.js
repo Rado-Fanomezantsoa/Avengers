@@ -70,7 +70,17 @@ app.put("/characters/:id", (req, res) => {
   res.json(characters[index]);
 });
 
-
+app.delete("/characters/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const characters = readCharacters();
+  const exists = characters.some((c) => c.id === id);
+  
+  if (!exists) return res.status(404).json({ message: "Character not found" });
+  
+  const filtered = characters.filter((c) => c.id !== id);
+  writeCharacters(filtered);
+  res.json({ message: "Character deleted" });
+});
 
 
 app.listen(port, () => {
